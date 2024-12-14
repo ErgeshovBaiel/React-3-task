@@ -1,0 +1,29 @@
+import  './Header.css'
+import { IoIosSearch } from "react-icons/io";
+import { BsCart2 } from "react-icons/bs";
+
+const Header = () => {
+  return (
+    <header>
+        <div className='logo'>
+            <img width={30} src="https://my-react-pizza-v2.netlify.app/static/media/pizza-logo.56ac87032d8f6fdf863326acd06c0d97.svg" alt="" />
+            <div>
+        <h4 className='react-pizza'>REACT RIZZA V2</h4>
+        <p className='react-text'>самая вкусная пицца во вселенной</p>
+            </div>
+        </div>
+        <div className='search'>
+            <img width={15} style={{marginLeft: '15px'}} src="data:image/png;base64,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" alt="" />
+            <input type="text"  placeholder='Поиск пиццы...' />
+        </div>
+        <div className='cart-btn'>
+            <a href="">
+                <span>0 $</span>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <span><BsCart2 />     0</span>
+            </a>
+        </div>
+    </header>
+  )
+}
+
+export default Header
